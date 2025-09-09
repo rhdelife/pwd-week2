@@ -2,7 +2,7 @@
 <!-- <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p> -->
 <script>
   let name = $state('');
-  let welcome = $derived(name ? 'Hello,${name}!' : 'Welcome!');
+  let welcome = $derived(name ? 'Hello, ${name}!' : 'Welcome!');
 
   function randomize() {
     const msgs =['웹 개발 재밌다!', 'SvelteKit 금방 익힘', 'Vercel 배포도 쉽다!'];
