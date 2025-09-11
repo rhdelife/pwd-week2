@@ -1,25 +1,23 @@
-<script>
-	// import favicon from '$lib/assets/favicon.svg';
-
-	let { children } = $props();
+<!-- src/routes/+layout.svelte -->
+<script>  
+  let { children } = $props();
 </script>
 
 <svelte:head>
-	<!-- <link rel="icon" href={favicon} /> -->
-	 <title>AJOU Mini Porfolio</title>
-	 <meta name="description" content="SvelteKit + Vercel mini portfolio" />
+  <title>AJOU Mini Portfolio</title>
+  <meta name="description" content="SvelteKit + Vercel mini portfolio" />
 </svelte:head>
 
 <nav>
-	<a href="/">Home</a>
-	<a href="/about">About</a>
-	<a href="/projects">Projects</a>
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/projects">Projects</a>
 </nav>
+
 <main>
-	{@render children()}
+  {@render children()}
 </main>
 
 <style global>
-	@import '../app.css';
+  @import '../app.css';
 </style>
-
